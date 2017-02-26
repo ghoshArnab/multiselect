@@ -45,8 +45,8 @@ version = (npmPackage && npmPackage.version !== undefined && npmPackage.name == 
 module.exports = {
 
   title      : 'pegaMultiselect UI',
-  repository : 'https://github.com/pegaMultiselect/Multiselect-Pega',
-  url        : 'http://www.Multiselect-Pega.com/',
+  repository : 'https://github.com/ghoshArnab/multiselect',
+  url        : 'https://github.com/ghoshArnab/multiselect',
 
   banner: ''
     + ' /*' + '\n'
