@@ -3,10 +3,10 @@ var
 ;
 
 Package.describe({
-  name    : 'semantic:ui',
-  summary : 'Semantic UI - LESS Release of Semantic UI',
+  name    : 'pegaMultiselect:ui',
+  summary : 'pegaMultiselect UI - LESS Release of pegaMultiselect UI',
   version : '{version}',
-  git     : 'git://github.com/Semantic-Org/Semantic-UI-LESS.git',
+  git     : 'git://github.com/pegaMultiselect/Multiselect-Pega-LESS.git',
 });
 
 Package.onUse(function(api) {

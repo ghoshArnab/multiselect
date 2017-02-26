@@ -1,4 +1,6 @@
 Multiselect Implementation in Pega
 Team Swordfish Bangalore
 
-Please use "npm install" to get started.
+gulp build to generate all files
+gulp build-js for js files
+gulp build-css for less files

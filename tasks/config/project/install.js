@@ -31,7 +31,7 @@ var when = {
 
   // install
   hasConfig: function() {
-    return requireDotFile('semantic.json', process.cwd());
+    return requireDotFile('pegaMultiselect.json', process.cwd());
   },
 
   allowOverwrite: function(questions) {
@@ -82,7 +82,7 @@ module.exports = {
     return when.hasConfig();
   },
 
-  // detect whether there is a semantic.json configuration and that the auto-install option is set to true
+  // detect whether there is a pegaMultiselect.json configuration and that the auto-install option is set to true
   shouldAutoInstall: function() {
     var
       config = when.hasConfig()
@@ -187,9 +187,9 @@ module.exports = {
       json.permission = answers.permission;
     }
 
-    // add path to semantic
-    if(answers.semanticRoot) {
-      json.base = path.normalize(answers.semanticRoot);
+    // add path to pegaMultiselect
+    if(answers.pegaMultiselectRoot) {
+      json.base = path.normalize(answers.pegaMultiselectRoot);
     }
 
     // record version number to avoid re-installing on same version
@@ -226,7 +226,7 @@ module.exports = {
   // files cleaned up after install
   setupFiles: [
     './src/theme.config.example',
-    './semantic.json.example',
+    './pegaMultiselect.json.example',
     './src/_site'
   ],
 
@@ -237,10 +237,10 @@ module.exports = {
 
   // source paths (when installing)
   source: {
-    config       : './semantic.json.example',
+    config       : './pegaMultiselect.json.example',
     definitions  : './src/definitions',
     gulpFile     : './gulpfile.js',
-    lessImport   : './src/semantic.less',
+    lessImport   : './src/pegaMultiselect.less',
     site         : './src/_site',
     tasks        : './tasks',
     themeConfig  : './src/theme.config.example',
@@ -252,8 +252,8 @@ module.exports = {
 
   // expected final filenames
   files: {
-    config      : 'semantic.json',
-    lessImport  : 'src/semantic.less',
+    config      : 'pegaMultiselect.json',
+    lessImport  : 'src/pegaMultiselect.less',
     site        : 'src/site',
     themeConfig : 'src/theme.config',
     themeImport : 'src/theme.less'
@@ -309,9 +309,9 @@ module.exports = {
       },
       {
         type    : 'input',
-        name    : 'semanticRoot',
-        message : 'Where should we put Semantic UI inside your project?',
-        default : 'semantic/'
+        name    : 'pegaMultiselectRoot',
+        message : 'Where should we put pegaMultiselect UI inside your project?',
+        default : 'pegaMultiselect/'
       }
     ],
 
@@ -319,7 +319,7 @@ module.exports = {
       {
         type: 'list',
         name: 'overwrite',
-        message: 'It looks like you have a semantic.json file already.',
+        message: 'It looks like you have a pegaMultiselect.json file already.',
         when: when.hasConfig,
         choices: [
           {
@@ -335,7 +335,7 @@ module.exports = {
       {
         type: 'list',
         name: 'install',
-        message: 'Set-up Semantic UI',
+        message: 'Set-up pegaMultiselect UI',
         when: when.allowOverwrite,
         choices: [
           {
@@ -457,7 +457,7 @@ module.exports = {
       {
         type: 'input',
         name: 'dist',
-        message: 'Where should we output Semantic UI?',
+        message: 'Where should we output pegaMultiselect UI?',
         default: defaults.paths.output.packaged,
         filter: filter.removeTrailingSlash,
         when: when.express
@@ -504,7 +504,7 @@ module.exports = {
         message: 'Should we remove set-up files?',
         choices: [
           {
-            name: 'Yes (re-install will require redownloading semantic).',
+            name: 'Yes (re-install will require redownloading pegaMultiselect).',
             value: 'yes'
           },
           {
@@ -516,7 +516,7 @@ module.exports = {
       {
         type: 'list',
         name: 'build',
-        message: 'Do you want to build Semantic now?',
+        message: 'Do you want to build pegaMultiselect now?',
         choices: [
           {
             name: 'Yes',

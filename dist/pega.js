@@ -1,7 +1,7 @@
  /*
- * # Semantic UI - 2.2.9
- * https://github.com/Semantic-Org/Semantic-UI
- * http://www.semantic-ui.com/
+ * # pegaMultiselect UI - 2.2.9
+ * https://github.com/pegaMultiselect/Multiselect-Pega
+ * http://www.Multiselect-Pega.com/
  *
  * Copyright 2014 Contributors
  * Released under the MIT license
@@ -9,8 +9,8 @@
  *
  */
 /*!
- * # Semantic UI 2.2.9 - Dropdown
- * http://github.com/semantic-org/semantic-ui/
+ * # pegaMultiselect 0.1 - Dropdown
+ * http://github.com/pegaMultiselect/Multiselect-Pega/
  *
  *
  * Released under the MIT license
@@ -3621,7 +3621,7 @@ $.fn.dropdown.settings = {
     method          : 'The method you called is not defined.',
     noAPI           : 'The API module is required to load resources remotely',
     noStorage       : 'Saving remote data requires session storage',
-    noTransition    : 'This module requires ui transitions <https://github.com/Semantic-Org/UI-Transition>'
+    noTransition    : 'This module requires ui transitions <https://github.com/pegaMultiselect/UI-Transition>'
   },
 
   regExp : {
@@ -3777,8 +3777,8 @@ $.fn.dropdown.settings.templates = {
 })( jQuery, window, document );
 
 /*!
- * # Semantic UI 2.2.9 - Transition
- * http://github.com/semantic-org/semantic-ui/
+ * # pegaMultiselect 0.1 - Transition
+ * http://github.com/pegaMultiselect/Multiselect-Pega/
  *
  *
  * Released under the MIT license

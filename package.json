@@ -1,17 +1,17 @@
 {
-  "name": "semantic-ui",
-  "version": "2.2.9",
-  "title": "Semantic UI",
-  "description": "Semantic empowers designers and developers by creating a shared vocabulary for UI.",
-  "homepage": "http://www.semantic-ui.com",
-  "author": "Jack Lukic <jack@semantic-ui.com>",
+  "name": "Multiselect-Pega",
+  "version": "0.1",
+  "title": "pegaMultiselect UI",
+  "description": "pegaMultiselect in pega by Team Swordfish Bangalore.",
+  "homepage": "https://github.com/ghoshArnab/multiselect",
+  "author": "ghoshArnab",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Semantic-Org/Semantic-UI.git"
+    "url": "https://github.com/ghoshArnab/multiselect.git"
   },
   "bugs": {
-    "url": "https://github.com/Semantic-Org/Semantic-UI/issues"
+    "url": "https://github.com/ghoshArnab/multiselect.git/issues"
   },
   "scripts": {
     "install": "gulp install"
@@ -39,7 +39,6 @@
     "gulp-print": "*",
     "gulp-rename": "*",
     "gulp-replace": "*",
-    "gulp-rtlcss": "*",
     "gulp-uglify": "*",
     "gulp-util": "*",
     "gulp-watch": "*",
@@ -73,7 +72,6 @@
     "gulp-prompt": "^0.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.4",
-    "gulp-rtlcss": "^1.0.0",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.11",
@@ -94,5 +92,5 @@
     "gulp-tap": "*",
     "merge-stream": "*"
   },
-  "style": "dist/semantic.css"
+  "style": "dist/pegaMultiselect.css"
 }

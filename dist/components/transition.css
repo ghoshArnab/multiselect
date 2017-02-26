@@ -1,6 +1,6 @@
 /*!
- * # Semantic UI 2.2.9 - Transition
- * http://github.com/semantic-org/semantic-ui/
+ * # pegaMultiselect 0.1 - Transition
+ * http://github.com/pegaMultiselect/Multiselect-Pega/
  *
  *
  * Released under the MIT license

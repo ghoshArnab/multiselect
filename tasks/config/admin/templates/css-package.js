@@ -3,10 +3,10 @@ var
 ;
 
 Package.describe({
-  name    : 'semantic:ui-css',
-  summary : 'Semantic UI - CSS Release of Semantic UI',
+  name    : 'pegaMultiselect:ui-css',
+  summary : 'pegaMultiselect UI - CSS Release of pegaMultiselect UI',
   version : '{version}',
-  git     : 'git://github.com/Semantic-Org/Semantic-UI-CSS.git',
+  git     : 'git://github.com/pegaMultiselect/Multiselect-Pega-CSS.git',
 });
 
 Package.onUse(function(api) {
@@ -27,8 +27,8 @@ Package.onUse(function(api) {
     'themes/default/assets/images/flags.png',
 
     // release
-    'semantic.css',
-    'semantic.js'
+    'pegaMultiselect.css',
+    'pegaMultiselect.js'
   ], 'client');
 
 });

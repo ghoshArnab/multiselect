@@ -55,7 +55,7 @@ require('./collections/internal')(gulp);
 module.exports = function(callback) {
 
   if( !install.isSetup() ) {
-    console.error('Cannot watch files. Run "gulp install" to set-up Semantic');
+    console.error('Cannot watch files. Run "gulp install" to set-up pegaMultiselect');
     return;
   }
 

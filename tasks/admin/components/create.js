@@ -179,7 +179,7 @@ module.exports = function(callback) {
           .pipe(flatten())
           .pipe(jsonEditor(function(bower) {
             bower.name = packageName;
-            bower.description = capitalizedComponent + ' - Semantic UI';
+            bower.description = capitalizedComponent + ' - pegaMultiselect UI';
             if(isJavascript) {
               if(isCSS) {
                 bower.main = [
@@ -223,7 +223,7 @@ module.exports = function(callback) {
             if(version) {
               npm.version = version;
             }
-            npm.title       = 'Semantic UI - ' + capitalizedComponent;
+            npm.title       = 'pegaMultiselect UI - ' + capitalizedComponent;
             npm.description = 'Single component release of ' + component;
             npm.repository  = {
               type : 'git',
@@ -247,7 +247,7 @@ module.exports = function(callback) {
               };
               composer.main = component + '.js';
             }
-            composer.name = 'semantic/' + component;
+            composer.name = 'pegaMultiselect/' + component;
             if(version) {
               composer.version = version;
             }

@@ -25,10 +25,10 @@ require('./collections/build')(gulp);
 
 module.exports = function(callback) {
 
-  console.info('Building Semantic');
+  console.info('Building pegaMultiselect');
 
   if( !install.isSetup() ) {
-    console.error('Cannot find semantic.json. Run "gulp install" to set-up Semantic');
+    console.error('Cannot find pegaMultiselect.json. Run "gulp install" to set-up pegaMultiselect');
     return 1;
   }
 

@@ -1,17 +1,17 @@
 {
-  "name"        : "semantic/ui",
-  "description" : "Semantic empowers designers and developers by creating a shared vocabulary for UI.",
-  "homepage"    : "http://www.semantic-ui.com",
+  "name"        : "pegaMultiselect/ui",
+  "description" : "pegaMultiselect empowers designers and developers by creating a shared vocabulary for UI.",
+  "homepage"    : "http://www.Multiselect-Pega.com",
   "authors": [
     {
-      "name" : "Jack Lukic",
-      "email": "jacklukic@gmail.com",
-      "web"  : "http://www.jacklukic.com",
+      "name" : "arnab ghosh",
+      "email": "arnab.ghosh@in.pega.com",
+      "web"  : "https://github.com/ghoshArnab/multiselect",
       "role" : "Creator"
     }
   ],
   "keywords": [
-    "semantic",
+    "pegaMultiselect",
     "ui",
     "css",
     "framework"

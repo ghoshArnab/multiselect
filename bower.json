@@ -1,20 +1,20 @@
 {
-  "name"        : "semantic",
-  "description" : "Semantic empowers designers and developers by creating a shared vocabulary for UI.",
-  "homepage"    : "http://www.semantic-ui.com",
+  "name"        : "pegaMultiselect",
+  "description" : "pegaMultiselect in pega by Team Swordfish Bangalore.",
+  "homepage"    : "https://github.com/ghoshArnab/multiselect",
   "author": {
-    "name" : "Jack Lukic",
-    "web"  : "http://www.jacklukic.com"
+    "name" : "arnab ghosh",
+    "web"  : "https://github.com/ghoshArnab/multiselect"
   },
   "dependencies": {
     "jquery"      : ">=1.8"
   },
   "main": [
-    "src/semantic.less",
-    "dist/semantic.js"
+    "src/pegaMultiselect.less",
+    "dist/pegaMultiselect.js"
   ],
   "keywords": [
-    "semantic",
+    "pegaMultiselect",
     "ui",
     "css3",
     "framework"

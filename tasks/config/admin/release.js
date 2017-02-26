@@ -27,30 +27,30 @@ module.exports = {
     notes  : './RELEASE-NOTES.md'
   },
 
-  org         : 'Semantic-Org',
-  repo        : 'Semantic-UI',
+  org         : 'pegaMultiselect',
+  repo        : 'Multiselect-Pega',
 
   // files created for package managers
   files: {
     composer : 'composer.json',
-    config   : 'semantic.json',
+    config   : 'pegaMultiselect.json',
     npm      : 'package.json',
     meteor   : 'package.js'
   },
 
   // root name for distribution repos
-  distRepoRoot      : 'Semantic-UI-',
+  distRepoRoot      : 'Multiselect-Pega-',
 
   // root name for single component repos
   componentRepoRoot : 'UI-',
 
   // root name for package managers
-  packageRoot          : 'semantic-ui-',
+  packageRoot          : 'Multiselect-Pega-',
 
   // root path to repos
   outputRoot  : '../repos/',
 
-  homepage    : 'http://www.semantic-ui.com',
+  homepage    : 'http://www.Multiselect-Pega.com',
 
   // distributions that get separate repos
   distributions: [

@@ -1,22 +1,22 @@
 {
   "name"        : "Component",
   "description" : "Component distribution",
-  "homepage"    : "http://www.semantic-ui.com",
+  "homepage"    : "http://www.Multiselect-Pega.com",
   "author": {
-    "name" : "Jack Lukic",
-    "web"  : "http://www.jacklukic.com"
+    "name" : "arnab ghosh",
+    "web"  : "https://github.com/ghoshArnab/multiselect"
   },
   "ignore": [
     "./index.js"
   ],
   "keywords": [
-    "semantic",
+    "pegaMultiselect",
     "ui",
     "css3",
     "framework"
   ],
   "license" : [
-    "http://semantic-ui.mit-license.org/"
+    "http://Multiselect-Pega.mit-license.org/"
   ],
   "ignore": [
     "docs",

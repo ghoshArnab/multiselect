@@ -19,12 +19,12 @@ module.exports = {
   },
 
   filenames: {
-    concatenatedCSS            : 'semantic.css',
-    concatenatedJS             : 'semantic.js',
-    concatenatedMinifiedCSS    : 'semantic.min.css',
-    concatenatedMinifiedJS     : 'semantic.min.js',
-    concatenatedRTLCSS         : 'semantic.rtl.css',
-    concatenatedMinifiedRTLCSS : 'semantic.rtl.min.css'
+    concatenatedCSS            : 'pegaMultiselect.css',
+    concatenatedJS             : 'pegaMultiselect.js',
+    concatenatedMinifiedCSS    : 'pegaMultiselect.min.css',
+    concatenatedMinifiedJS     : 'pegaMultiselect.min.js',
+    concatenatedRTLCSS         : 'pegaMultiselect.rtl.css',
+    concatenatedMinifiedRTLCSS : 'pegaMultiselect.rtl.min.css'
   },
 
   regExp: {
@@ -39,7 +39,7 @@ module.exports = {
 
       // add version to first comment
       license: {
-        in  : /(^\/\*[\s\S]+)(# Semantic UI )([\s\S]+?\*\/)/,
+        in  : /(^\/\*[\s\S]+)(# pegaMultiselect UI )([\s\S]+?\*\/)/,
         out : '$1$2' + release.version + ' $3'
       },
 

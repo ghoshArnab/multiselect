@@ -8,8 +8,8 @@
    For more notes
 
    * Runs automatically after npm update (hooks)
-   * (NPM) Install - Will ask for where to put semantic (outside pm folder)
-   * (NPM) Upgrade - Will look for semantic install, copy over files and update if new version
+   * (NPM) Install - Will ask for where to put pegaMultiselect (outside pm folder)
+   * (NPM) Upgrade - Will look for pegaMultiselect install, copy over files and update if new version
    * Standard installer runs asking for paths to site files etc
 
 */
@@ -58,7 +58,7 @@ var
 module.exports = function (callback) {
 
 var
-  currentConfig = requireDotFile('semantic.json'),
+  currentConfig = requireDotFile('pegaMultiselect.json'),
   manager       = install.getPackageManager(),
   rootQuestions = questions.root,
   installFolder = false,
@@ -85,7 +85,7 @@ if( install.isSubModule() ) {
     Update SUI
 -----------------*/
 
-// run update scripts if semantic.json exists
+// run update scripts if pegaMultiselect.json exists
 if(currentConfig && manager.name === 'NPM') {
 
   var
@@ -106,7 +106,7 @@ if(currentConfig && manager.name === 'NPM') {
 
     // perform update if new version
     if(currentConfig.version !== release.version) {
-      console.log('Updating Semantic UI from ' + currentConfig.version + ' to ' + release.version);
+      console.log('Updating pegaMultiselect UI from ' + currentConfig.version + ' to ' + release.version);
 
       console.info('Updating ui definitions...');
       wrench.copyDirSyncRecursive(source.definitions, updatePaths.definition, settings.wrench.overwrite);
@@ -136,7 +136,7 @@ if(currentConfig && manager.name === 'NPM') {
 
       console.info('Updating version...');
 
-      // update version number in semantic.json
+      // update version number in pegaMultiselect.json
       gulp.src(updatePaths.config)
         .pipe(plumber())
         .pipe(rename(settings.rename.json)) // preserve file extension
@@ -151,7 +151,7 @@ if(currentConfig && manager.name === 'NPM') {
       return;
     }
     else {
-      console.log('Current version of Semantic UI already installed');
+      console.log('Current version of pegaMultiselect UI already installed');
       return;
     }
 
@@ -191,13 +191,13 @@ if(manager.name == 'NPM') {
 
 gulp.task('run setup', function() {
 
-  // If auto-install is switched on, we skip the configuration section and simply reuse the configuration from semantic.json
+  // If auto-install is switched on, we skip the configuration section and simply reuse the configuration from pegaMultiselect.json
   if(install.shouldAutoInstall()) {
     answers = {
       overwrite    : 'yes',
       install      : 'auto',
       useRoot      : true,
-      semanticRoot : currentConfig.base
+      pegaMultiselectRoot : currentConfig.base
     };
   }
   else {
@@ -271,8 +271,8 @@ gulp.task('create install files', function(callback) {
       themeImport  : folders.themeImport
     });
 
-    // add project root to semantic root
-    installFolder = path.join(manager.root, answers.semanticRoot);
+    // add project root to pegaMultiselect root
+    installFolder = path.join(manager.root, answers.pegaMultiselectRoot);
 
     // add install folder to all output paths
     for(var destination in installPaths) {
@@ -296,7 +296,7 @@ gulp.task('create install files', function(callback) {
       console.error('NPM does not have permissions to create folders at your specified path. Adjust your folders permissions and run "npm install" again');
     }
 
-    console.log('Installing to \x1b[92m' + answers.semanticRoot + '\x1b[0m');
+    console.log('Installing to \x1b[92m' + answers.pegaMultiselectRoot + '\x1b[0m');
 
     console.info('Copying UI definitions');
     wrench.copyDirSyncRecursive(source.definitions, installPaths.definition, settings.wrench.overwrite);
@@ -377,10 +377,10 @@ gulp.task('create install files', function(callback) {
   });
 
   /*--------------
-    Semantic.json
+    pegaMultiselect.json
   ---------------*/
 
-  gulp.task('create semantic.json', function() {
+  gulp.task('create pegaMultiselect.json', function() {
 
     var
       jsonConfig = install.createJSON(answers)
@@ -388,7 +388,7 @@ gulp.task('create install files', function(callback) {
 
     // adjust variables in theme.less
     if( fs.existsSync(installPaths.config) ) {
-      console.info('Extending config file (semantic.json)', installPaths.config);
+      console.info('Extending config file (pegaMultiselect.json)', installPaths.config);
       return gulp.src(installPaths.config)
         .pipe(plumber())
         .pipe(rename(settings.rename.json)) // preserve file extension
@@ -397,7 +397,7 @@ gulp.task('create install files', function(callback) {
       ;
     }
     else {
-      console.info('Creating config file (semantic.json)', installPaths.config);
+      console.info('Creating config file (pegaMultiselect.json)', installPaths.config);
       return gulp.src(source.config)
         .pipe(plumber())
         .pipe(rename({ extname : '' })) // remove .template from ext
@@ -410,7 +410,7 @@ gulp.task('create install files', function(callback) {
 
   runSequence(
     'create theme.config',
-    'create semantic.json',
+    'create pegaMultiselect.json',
     callback
   );
 
@@ -420,7 +420,7 @@ gulp.task('clean up install', function() {
 
   // Completion Message
   if(installFolder && !install.shouldAutoInstall()) {
-    console.log('\n Setup Complete! \n Installing Peer Dependencies. \x1b[0;31mPlease refrain from ctrl + c\x1b[0m... \n After completion navigate to \x1b[92m' + answers.semanticRoot + '\x1b[0m and run "\x1b[92mgulp build\x1b[0m" to build');
+    console.log('\n Setup Complete! \n Installing Peer Dependencies. \x1b[0;31mPlease refrain from ctrl + c\x1b[0m... \n After completion navigate to \x1b[92m' + answers.pegaMultiselectRoot + '\x1b[0m and run "\x1b[92mgulp build\x1b[0m" to build');
     process.exit(0);
   }
   else {

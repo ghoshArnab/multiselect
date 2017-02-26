@@ -27,11 +27,7 @@ var
 
   // docs tasks
   serveDocs    = require('./tasks/docs/serve'),
-  buildDocs    = require('./tasks/docs/build'),
-
-  // rtl
-  buildRTL     = require('./tasks/rtl/build'),
-  watchRTL     = require('./tasks/rtl/watch')
+  buildDocs    = require('./tasks/docs/build')
 ;
 
 
@@ -51,10 +47,10 @@ gulp.task('build-css', 'Builds all css from source', buildCSS);
 gulp.task('build-assets', 'Copies all assets from source', buildAssets);
 
 gulp.task('clean', 'Clean dist folder', clean);
-gulp.task('version', 'Displays current version of Semantic', version);
+gulp.task('version', 'Displays current version of pegaMultiselect', version);
 
 gulp.task('install', 'Runs set-up', install);
-gulp.task('check-install', 'Displays current version of Semantic', checkInstall);
+gulp.task('check-install', 'Displays current version of pegaMultiselect', checkInstall);
 
 /*--------------
       Docs
@@ -62,7 +58,7 @@ gulp.task('check-install', 'Displays current version of Semantic', checkInstall)
 
 /*
   Lets you serve files to a local documentation instance
-  https://github.com/Semantic-Org/Semantic-UI-Docs/
+  https://github.com/pegaMultiselect/Multiselect-Pega-Docs/
 */
 
 gulp.task('serve-docs', 'Serve file changes to SUI Docs', serveDocs);

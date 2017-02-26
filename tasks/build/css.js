@@ -62,7 +62,7 @@ module.exports = function(callback) {
   console.info('Building CSS');
 
   if( !install.isSetup() ) {
-    console.error('Cannot build files. Run "gulp install" to set-up Semantic');
+    console.error('Cannot build files. Run "gulp install" to set-up pegaMultiselect');
     return;
   }
 
